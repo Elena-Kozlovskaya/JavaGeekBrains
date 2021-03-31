@@ -6,11 +6,11 @@ public class HomeWorkApp3 {
     public static void main(String[] args) {
         invertArray();
         fillArray();
-        lessThanSix();
+        isLessThanSix();
         fillArrayDiagonals();
         System.out.println(Arrays.toString(returnArray(4, 3)));
         findMinAndMax();
-        boolean t = sumPartsArray(new int[] {1, 3, 1, 1, 2, 2});
+        boolean t = isArrayPartsEqual(new int[] {1, 3, 1, 1, 2, 2});
         System.out.println(t);
         arrayShiftLeft(new int[]{1, 2, 3, 4, 5}, 2);
     }
@@ -40,7 +40,7 @@ public class HomeWorkApp3 {
     /**
      * Значения меньше 6 умножить на 2
      */
-    private static void lessThanSix() {
+    private static void isLessThanSix() {
         int[] array = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
         for (int i = 0; i < array.length; i++) {
             if (array[i] < 6) {
@@ -106,7 +106,7 @@ public class HomeWorkApp3 {
      * @param array одномерный целочисленный массив
      * @return true
      */
-    private static boolean sumPartsArray(int[] array){
+    private static boolean isArrayPartsEqual(int[] array){
         int sumI = 0;
         int sumJ = 0;
         int n = 1;
